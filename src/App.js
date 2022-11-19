@@ -1,12 +1,10 @@
 import ReactDOM from 'react-dom';
 import React from "react";
-import Header from "./components/Header";
+import SiteContainer from './components/SiteContainer'
 
 function App() {
     return (
-        <div>
-            <Header />
-        </div>
+        <SiteContainer />
     );
 }
 
