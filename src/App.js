@@ -5,7 +5,6 @@ import Header from "./components/Header";
 function App() {
     return (
         <div>
-            for the love of god help me
             <Header />
         </div>
     );
