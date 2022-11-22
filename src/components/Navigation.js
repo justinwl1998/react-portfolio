@@ -4,8 +4,14 @@ export default function Navigation(props) {
     
     const {currentPage, setCurrentPage} = props;
 
+    const styles = {
+        navStyles: {
+            display: 'inline-block'
+        }
+    }
+
     return (
-        <nav>
+        <nav style={styles.navStyles}>
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <a
