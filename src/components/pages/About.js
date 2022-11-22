@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Todo: Add image of self to this
+
 export default function About() {
     return (
       <div>

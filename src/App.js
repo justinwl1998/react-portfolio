@@ -9,19 +9,20 @@ import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 
 function App() {
-    const [currentPage, setCurrentPage] = useState('About');
+    const [currentPage, setCurrentPage] = useState(window.location.href.includes('#') ? window.location.href.substring(window.location.href.indexOf('#') + 1) : 'about');
 
     const renderPage = () => {
-        if (currentPage === 'About') {
+        console.log()
+        if (currentPage.toLowerCase() === 'about') {
             return <About />;
         }
-        if (currentPage === 'Contact') {
+        if (currentPage.toLowerCase() === 'contact') {
             return <Contact />;
         }
-        if (currentPage === 'Portfolio') {
+        if (currentPage.toLowerCase() === 'portfolio') {
             return <Portfolio />;
         }
-        if (currentPage === 'Resume') {
+        if (currentPage.toLowerCase() === 'resume') {
             return <Resume />;
         }
     };

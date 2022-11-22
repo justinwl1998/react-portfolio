@@ -1,6 +1,8 @@
 import React from 'react';
 import Project from '../Project';
 
+// todo: add projects object array to render
+
 export default function Portfolio() {
     return (
       <div>
