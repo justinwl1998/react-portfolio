@@ -30,7 +30,7 @@ export default function SiteContainer() {
         <div>
             <Header />
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
-            {renderPage()}
+            {renderPage}
         </div>
     );
 }

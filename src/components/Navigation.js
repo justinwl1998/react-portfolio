@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function Navigation({ currentPage, handlePageChange }) {
+export default function Navigation() {
     return (
         <nav>
         <ul className="nav nav-tabs">
         <li className="nav-item">
           <a
             href="#about"
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+            className='nav-link'
           >
             About Me
           </a>
@@ -16,8 +15,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             href="#portfolio"
-            onClick={() => handlePageChange('Portfolio')}
-            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+            className='nav-link'
           >
             Portfolio
           </a>
@@ -25,8 +23,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             href="#contact"
-            onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+            className='nav-link'
           >
             Contact
           </a>
@@ -34,8 +31,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             href="#resume"
-            onClick={() => handlePageChange('Resume')}
-            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+            className='nav-link'
           >
             Resume
           </a>
