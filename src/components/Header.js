@@ -9,6 +9,10 @@ const styles = {
 };
 
 function Header() {
+  const [currentPage, setCurrentPage] = useState('About');
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
     <header className="header">
       <h1 style={styles.h1Style}>Justin Liu</h1>
@@ -17,7 +21,8 @@ function Header() {
           <li className="nav-item">
             <a
               href="#about"
-              className='nav-link'
+              onClick={() => handlePageChange('About')}
+              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
             >
               About Me
             </a>
@@ -25,7 +30,8 @@ function Header() {
           <li className="nav-item">
             <a
               href="#portfolio"
-              className='nav-link'
+              onClick={() => handlePageChange('Portfolio')}
+              className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
             >
               Portfolio
             </a>
@@ -33,7 +39,8 @@ function Header() {
           <li className="nav-item">
             <a
               href="#contact"
-              className='nav-link'
+              onClick={() => handlePageChange('Contact')}
+              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
             >
               Contact
             </a>
@@ -41,7 +48,8 @@ function Header() {
           <li className="nav-item">
             <a
               href="#resume"
-              className='nav-link'
+              onClick={() => handlePageChange('Resume')}
+              className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
             >
               Resume
             </a>

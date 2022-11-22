@@ -27,10 +27,9 @@ export default function SiteContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div>
+        <div className="test">
             <Header />
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
-            {renderPage}
         </div>
     );
 }

@@ -1,42 +1,30 @@
 import React, { useState } from 'react';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 
 export default function Navigation() {
+    const [currentPage, setCurrentPage] = useState('About');
+
+    const renderPage = () => {
+        if (currentPage === 'About') {
+            return <About />;
+        }
+        if (currentPage === 'Contact') {
+            return <Contact />;
+        }
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />;
+        }
+        if (currentPage === 'Resume') {
+            return <Resume />;
+        }
+    };
+
     return (
-        <nav>
-        <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <a
-            href="#about"
-            className='nav-link'
-          >
-            About Me
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#portfolio"
-            className='nav-link'
-          >
-            Portfolio
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#contact"
-            className='nav-link'
-          >
-            Contact
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#resume"
-            className='nav-link'
-          >
-            Resume
-          </a>
-        </li>
-      </ul>
-    </nav>
-    );
+        <div>
+            {renderPage()}
+        </div>
+    )
 }
