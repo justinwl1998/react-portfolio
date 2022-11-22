@@ -1,30 +1,49 @@
-import React, { useState } from 'react';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+import React from 'react';
 
-export default function Navigation() {
-    const [currentPage, setCurrentPage] = useState('About');
-
-    const renderPage = () => {
-        if (currentPage === 'About') {
-            return <About />;
-        }
-        if (currentPage === 'Contact') {
-            return <Contact />;
-        }
-        if (currentPage === 'Portfolio') {
-            return <Portfolio />;
-        }
-        if (currentPage === 'Resume') {
-            return <Resume />;
-        }
-    };
+export default function Navigation(props) {
+    
+    const {currentPage, setCurrentPage} = props;
 
     return (
-        <div>
-            {renderPage()}
-        </div>
+        <nav>
+        <ul className="nav nav-tabs">
+          <li className="nav-item">
+            <a
+              href="#about"
+              onClick={() => setCurrentPage('About')}
+              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+            >
+              About Me
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#portfolio"
+              onClick={() => setCurrentPage('Portfolio')}
+              className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+            >
+              Portfolio
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#contact"
+              onClick={() => setCurrentPage('Contact')}
+              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+            >
+              Contact
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#resume"
+              onClick={() => setCurrentPage('Resume')}
+              className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
     )
 }
