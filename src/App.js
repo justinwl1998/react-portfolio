@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
@@ -29,6 +30,7 @@ function App() {
         <div className="siteContainer">
             <Header currentPage = {currentPage} setCurrentPage={setCurrentPage}/>
             {renderPage()}
+            <Footer />
         </div>
     );
 }
