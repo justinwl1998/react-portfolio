@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from '../Form';
 
 export default function Contact() {
     return (
@@ -12,6 +13,8 @@ export default function Contact() {
           imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
           in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
         </p>
+
+        <Form />
       </div>
     );
   }
