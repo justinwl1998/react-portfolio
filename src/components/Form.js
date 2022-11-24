@@ -54,6 +54,7 @@ function Form() {
             value={name}
             name="name"
             onChange={handleInputChange}
+            onFocus={(e) => setErrorMsg('')}
             onBlur={(e) => {
                 if (!name) {
                     setErrorMsg('Name field is required.')
@@ -66,6 +67,7 @@ function Form() {
             value={email}
             name="email"
             onChange={handleInputChange}
+            onFocus={(e) => setErrorMsg('')}
             onBlur={(e) => {
                 if (!email) {
                     setErrorMsg('Email field is required.')
@@ -78,6 +80,7 @@ function Form() {
             value={message}
             name="message"
             onChange={handleInputChange}
+            onFocus={(e) => setErrorMsg('')}
             onBlur={(e) => {
                 if (!message) {
                     setErrorMsg('Message field is required.')
