@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { validateEmail } from '../utils/helpers';
+import '../styles/Form.css';
 
 function Form() {
     const [name, setName] = useState('');
@@ -49,55 +50,56 @@ function Form() {
 
     return (
         <div>
-        <form className="form">
-          <input
-            value={name}
-            name="name"
-            onChange={handleInputChange}
-            onFocus={(e) => setErrorMsg('')}
-            onBlur={(e) => {
-                if (!name) {
-                    setErrorMsg('Name field is required.')
-                }
-            }}
-            type="text"
-            placeholder="name"
-          />
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            onFocus={(e) => setErrorMsg('')}
-            onBlur={(e) => {
-                if (!email) {
-                    setErrorMsg('Email field is required.')
-                }
-            }}
-            type="email"
-            placeholder="email"
-          />
-          <input
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            onFocus={(e) => setErrorMsg('')}
-            onBlur={(e) => {
-                if (!message) {
-                    setErrorMsg('Message field is required.')
-                }
-            }}
-            type="text"
-            placeholder="message"
-          />
-          <button type="button" onClick={handleFormSubmit}>Submit</button>
-        </form>
-        {errorMsg && (
-          <div>
-            <p className="error-text">{errorMsg}</p>
-          </div>
-        )}
-      </div>
-  
+            <form className="form">
+                <input
+                    value={name}
+                    name="name"
+                    onChange={handleInputChange}
+                    onFocus={(e) => setErrorMsg('')}
+                    onBlur={(e) => {
+                        if (!name) {
+                            setErrorMsg('Name field is required.')
+                        }
+                    }}
+                    type="text"
+                    placeholder="name"
+                />
+                <input
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    onFocus={(e) => setErrorMsg('')}
+                    onBlur={(e) => {
+                        if (!email) {
+                            setErrorMsg('Email field is required.')
+                        }
+                    }}
+                    type="email"
+                    placeholder="email"
+                />
+                <textarea
+                    value={message}
+                    name="message"
+                    onChange={handleInputChange}
+                    onFocus={(e) => setErrorMsg('')}
+                    onBlur={(e) => {
+                        if (!message) {
+                            setErrorMsg('Message field is required.')
+                        }
+                    }}
+                    type="text"
+                    placeholder="message"
+                    className="messageField"
+                />
+                <button type="button" onClick={handleFormSubmit}>Submit</button>
+            </form>
+            {errorMsg && (
+                <div>
+                    <p className="error-text">{errorMsg}</p>
+                </div>
+            )}
+        </div>
+
     );
 
 }

@@ -1,10 +1,16 @@
 import React from 'react';
 import Form from '../Form';
 
+const styles = {
+  container: {
+    padding: '3%'
+  }
+}
+
 export default function Contact() {
     return (
-      <div>
-        <h1>Contact Page</h1>
+      <div style={styles.container}>
+        <h2>Contact Page</h2>
         <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed

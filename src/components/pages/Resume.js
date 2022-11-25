@@ -1,9 +1,15 @@
 import React from 'react';
 
+const styles = {
+  container: {
+    padding: '3%'
+  }
+}
+
 export default function Resume() {
     return (
-      <div>
-        <h1>Resume Page</h1>
+      <div style={styles.container}>
+        <h2>Resume Page</h2>
         <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed

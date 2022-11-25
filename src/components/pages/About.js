@@ -9,14 +9,17 @@ const styles = {
   },
   flexItemStyle: {
     margin: '5%'
+  },
+  container: {
+    padding: '3%'
   }
 }
 
 export default function About() {
     return (
-      <div>
+      <div style={styles.container}>
         <h2>About Me</h2>
-        <div style={styles.containerStyle} className="container">
+        <div style={styles.containerStyle}>
           <img style={styles.flexItemStyle} src="https://via.placeholder.com/300"></img>
           <p style={styles.flexItemStyle}>
             Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
