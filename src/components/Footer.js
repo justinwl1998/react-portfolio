@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const styles = {
   footerStyle: {
@@ -9,12 +9,11 @@ const styles = {
     left: 0,
     width: '100%',
     height: 'auto',
+    margin: 0
   },
 };
 
-function Footer(props) {
-  const {currentPage, setCurrentPage} = props;
-
+function Footer() {
   return (
     <footer style={styles.footerStyle} className="footer">
       <h3>Links eventually go here</h3>

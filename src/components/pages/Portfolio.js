@@ -5,11 +5,45 @@ import Project from '../Project';
 const projects = [
   {
     id: 1,
-    name: 'Placeholder1'
+    name: 'TAP TAP REVOLUTION: QWERTY REQUIEM',
+    github: 'https://github.com/justinwl1998/tap-tap-revolution-qr',
+    link: 'https://secure-savannah-57632.herokuapp.com/',
+    image: '',
   },
   {
     id: 2,
-    name: 'Placeholder2'
+    name: 'DnD Character Folio',
+    github: 'https://github.com/Spikeophant/dndCharFolio',
+    link: 'https://spikeophant.github.io/dndCharFolio/',
+    image: '',
+  },
+  {
+    id: 3,
+    name: '',
+    github: '',
+    link: '',
+    image: '',
+  },
+  {
+    id: 4,
+    name: '',
+    github: '',
+    link: '',
+    image: '',
+  },
+  {
+    id: 5,
+    name: '',
+    github: '',
+    link: '',
+    image: '',
+  },
+  {
+    id: 6,
+    name: '',
+    github: '',
+    link: '',
+    image: '',
   },
 ];
 
