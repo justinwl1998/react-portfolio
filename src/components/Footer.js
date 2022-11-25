@@ -14,10 +14,24 @@ const styles = {
 };
 
 function Footer() {
+
   return (
     <footer style={styles.footerStyle} className="footer">
-      <h3>Links eventually go here</h3>
-    </footer>
+      <a href='https://github.com/justinwl1998'>
+      <div className="link">
+          <i className="devicon-github-original"></i>
+      </div>
+      </a>
+      <a href='https://www.linkedin.com/in/justin-liu-9b01ba185/'>
+      <div className="link">
+        <i className="devicon-linkedin-plain"></i>
+      </div>
+      </a>
+      <div className="link">
+        <i className="devicon-twitter-original"></i>        
+      </div>
+
+  </footer>
   );
 }
 

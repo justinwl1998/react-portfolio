@@ -15,10 +15,7 @@ function Project(props) {
         container2: {
             display: 'flex',
             justifyContent: 'space-between',
-            marginLeft: '10%'
-        },
-        linkSpacing: {
-            marginRight: '10%',
+            marginLeft: '5%'
         },
         list: {
             marginBottom: '10rem'
@@ -30,17 +27,22 @@ function Project(props) {
             {props.projects.map(item => (
                 <li className="list-group-item" key={item.id}>
                     <div>
-                        <h5>{item.name}</h5>
+                        {/* <h5>{item.name}</h5> */}
                         <div className='project'>
                             <div className="imageContainer">
-                                <img src="https://via.placeholder.com/300"/>
-                                <div className="overlay" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                    <div className="overlayText">Hello World</div>
-                                </div>
+                                <a href={item.link}>
+                                    <img src="https://via.placeholder.com/300"/>
+                                    <div className="overlay" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                                        <div className="overlayText">{item.name}</div>
+                                    </div>
+                                </a>
                             </div>
                             <div style={styles.container2} className="links">
-                                <p style={styles.linkSpacing}>Linkes Go here</p>
-                                <p style={styles.linkSpacing}>Eventually</p>
+                                <a href={item.github}>
+                                    <div className="link">
+                                        <i className="devicon-github-original"></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
