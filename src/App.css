@@ -1,0 +1,54 @@
+:root {
+    --main-color: #4D92EC;
+    --font-color: #3E2F45;
+    --dark-color: rgb(9, 51, 51);
+    --highlight-color: #0623E1;
+}
+
+body {
+    position: absolute;
+    color: var(--font-color);
+}
+
+header {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 40px;
+    font-size: 36px;
+}
+
+.project {
+    display: flex;
+    align-items: center;    
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlayText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
