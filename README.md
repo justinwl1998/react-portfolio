@@ -23,3 +23,4 @@ The website contains an About, Portfolio, Contact and Resume section, as well as
 Created by Justin Liu.
 
 ## Link to live URL:
+https://justinwl1998.github.io/react-portfolio/
