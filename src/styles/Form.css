@@ -1,0 +1,12 @@
+div form input {
+    display: block;
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.messageField {
+    display: block;
+    width: 40%;
+    height: 140px;
+    resize: none;
+}
