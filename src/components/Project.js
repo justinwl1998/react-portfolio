@@ -31,7 +31,7 @@ function Project(props) {
                         <div className='project'>
                             <div className="imageContainer">
                                 <a href={item.link}>
-                                    <img src="https://via.placeholder.com/300"/>
+                                    <img src={item.image}/>
                                     <div className="overlay" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                         <div className="overlayText">{item.name}</div>
                                     </div>
