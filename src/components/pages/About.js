@@ -20,14 +20,10 @@ export default function About() {
       <div style={styles.container}>
         <h2>About Me</h2>
         <div style={styles.containerStyle}>
-          <img style={styles.flexItemStyle} src="https://via.placeholder.com/300"></img>
+          {/* I really couldn't be bothered to take a photo of myself. */}
+          <img style={styles.flexItemStyle} src="https://pbs.twimg.com/profile_images/1567595323660320774/Ww5_0yWK_400x400.png"></img>
           <p style={styles.flexItemStyle}>
-            Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-            Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-            mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-            lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-            imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-            in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+            Justin Liu does occasional projects with Javascript or even something artistic. If he's not having an art block at the moment.
           </p>
         </div>
       </div>
