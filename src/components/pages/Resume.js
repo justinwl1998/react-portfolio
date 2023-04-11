@@ -19,7 +19,7 @@ export default function Resume() {
           in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
         </p>
 
-        <p>Download my resume <a href='./public/ResumeRevise2023-4.pdf'>here,</a> eventually.</p>
+        <p>Download my resume <a href='../pdf/ResumeRevise2023-4.pdf'>here,</a> eventually.</p>
 
         <h3>Front-end proficiencies</h3>
         <ul>
